@@ -59,7 +59,7 @@ repositories {
 Add the library to dependencies:
 ```kotlin
 dependencies {
-    implementation("io.github.pavelstalone:packet-definition:0.1.0")
+    implementation("io.github.pavelstalone:packet-definition:0.1.1")
 }
 ```
 
@@ -69,7 +69,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation("io.github.pavelstalone:packet-definition:0.1.0")
+                implementation("io.github.pavelstalone:packet-definition:0.1.1")
             }
         }
     }
