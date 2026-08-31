@@ -1,10 +1,8 @@
 plugins {
-    alias(libs.plugins.kotlin.multiplatform)
+    id("packet-definition-multiplatform")
 }
 
 kotlin {
-    jvm()
-
     sourceSets {
         commonMain {
             dependencies {

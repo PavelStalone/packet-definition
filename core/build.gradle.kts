@@ -1,10 +1,15 @@
 plugins {
-    alias(libs.plugins.kotlin.multiplatform)
+    id("packet-definition-multiplatform")
+    id("packet-definition-publish")
+}
+
+artifact {
+    id = "packet-definition-core"
+    name = "PacketDefinition Core"
+    description = "Data structures for low-level manual data manipulation"
 }
 
 kotlin {
-    jvm()
-
     sourceSets {
         commonMain {
             dependencies {

@@ -15,12 +15,16 @@
  */
 
 plugins {
-    alias(libs.plugins.kotlinx.benchmark) apply false
-    alias(libs.plugins.kotlin.multiplatform) apply false
+    `kotlin-dsl`
 }
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(libs.gradle.plugin.kotlin)
+    implementation(libs.gradle.plugin.kotlin.jvm)
+    implementation(libs.gradle.plugin.kotlin.multiplatform)
+    implementation(libs.gradle.plugin.maven.publish)
 }
