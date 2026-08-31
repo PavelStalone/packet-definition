@@ -87,7 +87,7 @@ class CRC8Validation(val crc: Byte) : PacketValidation {
          */
         fun calculate(vararg values: Value<*>): Byte {
             val size = calculateByteSize(values.sumOf { it.size })
-            val bitBuffer = BitBuffer.Companion.allocate(size.bytes).apply {
+            val bitBuffer = BitBuffer.allocate(size.bytes).apply {
                 values.forEach { filledValue ->
                     put(bytes = filledValue.bytes, dataSize = filledValue.size)
                 }

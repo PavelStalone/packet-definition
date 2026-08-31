@@ -1,4 +1,4 @@
-# PacketDefinition
+# packet-definition
 
 [![Kotlin Alpha](https://kotl.in/badges/alpha.svg)](https://kotlinlang.org/docs/components-stability.html) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) ![Kotlin](https://img.shields.io/badge/Kotlin-2.4.0-blue.svg?logo=kotlin)
 
@@ -59,7 +59,7 @@ repositories {
 Add the library to dependencies:
 ```kotlin
 dependencies {
-    implementation("io.github.pavelstalone:packet-definition:0.1.0")
+    implementation("io.github.pavelstalone:packet-definition:0.0.0")
 }
 ```
 
@@ -69,7 +69,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation("io.github.pavelstalone:packet-definition:0.1.0")
+                implementation("io.github.pavelstalone:packet-definition:0.0.0")
             }
         }
     }

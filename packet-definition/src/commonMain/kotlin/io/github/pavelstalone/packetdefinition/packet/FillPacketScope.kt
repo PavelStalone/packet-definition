@@ -239,7 +239,7 @@ internal class FillPacketScopeImpl : FillPacketScope {
         bytes = parser(value)
     ).also { filledValue ->
         buffer = buffer.expand(filledValue.size)
-        buffer.put(bytes = filledValue.bytes, dataSize = filledValue.size)
+        buffer.put(bytes = filledValue.bytes.slice(), dataSize = filledValue.size)
     }
 
     fun build(): ByteBuffer {

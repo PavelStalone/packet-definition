@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-plugins {
-    alias(libs.plugins.kotlinx.benchmark) apply false
-    alias(libs.plugins.kotlin.multiplatform) apply false
-}
+package io.github.pavelstalone.convention
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
+import org.gradle.api.provider.Property
+
+abstract class ArtifactExtension {
+
+    abstract val id: Property<String>
+    abstract val name: Property<String>
+    abstract val description: Property<String>
 }
