@@ -31,9 +31,8 @@ jobs:
       # Extracts the version number from the release merge commit message
       - name: Extract version from merge commit
         id: get_version
-        env:
-          COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
           VERSION=$(echo "$COMMIT_MSG" | sed 's/Prepare packet-definition release //')
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
