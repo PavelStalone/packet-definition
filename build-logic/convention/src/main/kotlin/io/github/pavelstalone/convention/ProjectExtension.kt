@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
-plugins {
-    alias(libs.plugins.kotlinx.benchmark) apply false
-    alias(libs.plugins.kotlin.multiplatform) apply false
-}
+package io.github.pavelstalone.convention
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
-}
+import org.gradle.api.Project
+
+val Project.groupId: String
+    get() = stringProperty(name = "packetDefinitionGroup")
+
+val Project.versionName: String
+    get() = stringProperty(name = "packetDefinitionVersion")
+
+private fun Project.stringProperty(
+    name: String,
+    default: () -> String = { error("Unknown property: $name") },
+): String = (property(name) as? String) ?: default()

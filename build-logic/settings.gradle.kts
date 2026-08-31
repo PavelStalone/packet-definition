@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 
-plugins {
-    alias(libs.plugins.kotlinx.benchmark) apply false
-    alias(libs.plugins.kotlin.multiplatform) apply false
-}
-
-allprojects {
-    repositories {
-        mavenCentral()
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("../gradle/libs.versions.toml"))
+        }
     }
 }
+
+include(":convention")

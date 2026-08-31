@@ -1,10 +1,15 @@
 plugins {
-    alias(libs.plugins.kotlin.multiplatform)
+    id("packet-definition-multiplatform")
+    id("packet-definition-publish")
+}
+
+artifact {
+    id = "packet-definition"
+    name = "PacketDefinition DSL"
+    description = "Type-safe DSL for defining and working with binary data packets"
 }
 
 kotlin {
-    jvm()
-
     sourceSets {
         commonMain {
             dependencies {
