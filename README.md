@@ -1,6 +1,6 @@
 # packet-definition
 
-[![Kotlin Alpha](https://kotl.in/badges/alpha.svg)](https://kotlinlang.org/docs/components-stability.html) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) ![Kotlin](https://img.shields.io/badge/Kotlin-2.4.0-blue.svg?logo=kotlin)
+[![Kotlin Alpha](https://kotl.in/badges/alpha.svg)](https://kotlinlang.org/docs/components-stability.html) [![Maven Central](https://img.shields.io/maven-central/v/io.github.pavelstalone/packet-definition)](https://search.maven.org/artifact/io.github.pavelstalone/packet-definition) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) ![Kotlin](https://img.shields.io/badge/Kotlin-2.4.0-blue.svg?logo=kotlin)
 
 ![JVM](https://img.shields.io/badge/platform-JVM-orange.svg) ![Android](https://img.shields.io/badge/platform-Android-brightgreen.svg?logo=android)
 
